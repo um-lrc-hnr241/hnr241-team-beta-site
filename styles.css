@@ -132,109 +132,12 @@ a:focus {
   text-align: left;
 }
 
-/* Living garden novelty scene (replaces the old static SVG image) */
+/* Garden scene section */
 .garden-scene-section {
   margin-bottom: 2.5rem;
 }
 
-.living-garden {
-  position: relative;
-  width: 100%;
-  height: 260px;
-  background: linear-gradient(
-    to bottom,
-    #F6E7B2 0%,
-    #F6E7B2 62%,
-    #d9edc2 62%,
-    #d9edc2 100%
-  );
-  border: 4px solid var(--color-green);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.garden-plants {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 0 0.5rem;
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.garden-plant {
-  display: inline-block;
-}
-
-.garden-critter {
-  position: absolute;
-  font-size: 1.5rem;
-  line-height: 1;
-  will-change: transform;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.fly-anim {
-  animation-name: garden-fly;
-}
-
-.crawl-anim {
-  animation-name: garden-crawl;
-}
-
-@keyframes garden-fly {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  20% {
-    transform: translate(45px, -30px) rotate(8deg);
-  }
-  40% {
-    transform: translate(90px, 10px) rotate(-8deg);
-  }
-  60% {
-    transform: translate(45px, 45px) rotate(6deg);
-  }
-  80% {
-    transform: translate(-20px, 15px) rotate(-4deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
-
-@keyframes garden-crawl {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(25px, -6px);
-  }
-  50% {
-    transform: translate(50px, 4px);
-  }
-  75% {
-    transform: translate(25px, 10px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-/* Respect users who prefer reduced motion: keep the emoji visible but
-   stop them from moving, per WCAG guidance on motion animation. */
-@media (prefers-reduced-motion: reduce) {
-  .garden-critter {
-    animation: none !important;
-  }
-}
-
-/* Fallback SVG image (shown only when JavaScript is unavailable) */
+/* Illustration of the garden (static SVG) */
 .garden-image-section {
   margin: 0;
 }
