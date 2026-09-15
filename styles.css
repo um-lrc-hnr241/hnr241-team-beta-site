@@ -45,23 +45,17 @@ body {
 
 /* Header */
 .site-header {
-  background-color: var(--color-green);
+  background-image: linear-gradient(rgba(42, 74, 42, 0.82), rgba(42, 74, 42, 0.82)), url("images/header01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--color-white);
-  padding: 1.25rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
 .header-inner {
   max-width: 900px;
   margin: 0 auto;
-}
-
-.header-image {
-  display: block;
-  width: 100%;
-  max-height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 .site-title {
